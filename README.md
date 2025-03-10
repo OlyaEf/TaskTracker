@@ -1,4 +1,4 @@
-TaskTrackerTest
+TaskTracker
 Django REST Framework Python
 
 📌 Описание проекта
@@ -59,7 +59,7 @@ URL: /tasks/
 }
 
 📂 Структура проекта
-TaskTrackerTest/
+TaskTracker/
 DjangoProject/
 │── tasks/
 │   ├── migrations/
