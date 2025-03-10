@@ -2,13 +2,14 @@ TaskTrackerTest
 Django REST Framework Python
 
 📌 Описание проекта
-TaskTrackerTest — это минималистичный API на Django REST Framework для управления задачами.
+TaskTracker — это минималистичный API на Django REST Framework для управления задачами.
 
 🔹 Функции API:
 
 Получение списка задач (GET /tasks/)
 Создание новой задачи (POST /tasks/)
 Валидация поля title (не может быть пустым)
+
 🚀 Установка и запуск
 1. Клонирование репозитория
 git clone git@github.com:OlyaEf/TaskTrackerTest.git
@@ -28,6 +29,7 @@ python manage.py makemigrations
 python manage.py migrate
 5. Запуск сервера
 python manage.py runserver
+
 📍 API будет доступен по адресу: http://127.0.0.1:8000/tasks/
 
 📡 Использование API
@@ -55,6 +57,7 @@ URL: /tasks/
     "title": "Новая задача",
     "is_completed": false
 }
+
 📂 Структура проекта
 TaskTrackerTest/
 DjangoProject/
@@ -83,6 +86,7 @@ Python 3.12
 Django 5.1
 Django REST Framework 3.15.2
 Poetry (управление зависимостями)
+
 🎯 Автор
 📌 OlyaEf
 📧 efimovskikh@gmail.com
