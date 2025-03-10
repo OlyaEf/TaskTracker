@@ -1,0 +1,85 @@
+{
+  "info": {
+    "name": "Tasks API Collection",
+    "description": "Collection for testing the tasks API endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Task",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"Моя новая задача\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/tasks/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "tasks"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Create Task Success",
+          "originalRequest": {},
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n    \"id\": 1,\n    \"title\": \"Моя новая задача\",\n    \"is_completed\": false\n}"
+        }
+      ]
+    },
+    {
+      "name": "List Tasks",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/tasks/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "tasks"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "List Tasks Example",
+          "originalRequest": {},
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Моя новая задача\",\n        \"is_completed\": false\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Еще одна задача\",\n        \"is_completed\": true\n    }\n]"
+        }
+      ]
+    }
+  ]
+}
